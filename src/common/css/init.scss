@@ -1,0 +1,31 @@
+@import "common";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-center {
+  width: $nav-with;
+  margin: auto;
+}
+
+.content-center {
+  width: $content-with;
+  margin: auto;
+}
+
+.clear::after {
+  display: table;
+  content: "";
+  clear: both;
+}

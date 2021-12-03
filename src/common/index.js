@@ -1,6 +1,13 @@
-import script from './js/script.js'
-import sty from './css/sty.css'
-import style from './css/style.scss'
-import icon from '../static/font/font_2982790_fxesn1jjvw8/iconfont.css'
+/**
+ * 导入css
+ */
+import init from './css/init.scss'
+import common from './css/common.scss'
+import nav from './css/nav.scss'
+import chart from './css/rotationChart.scss'
+import footer from './css/footer.scss'
+/**
+ * 导入js
+ */
+import('./js/nav')
 
-console.log(script)

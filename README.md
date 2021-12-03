@@ -1,22 +1,56 @@
 # Web期末大作业
 
 #### 介绍
-这是我们Web大作业的仓库，我们每个人都在这写打代码
+这是我们Web大作业的项目
 
 #### 软件架构
 JQuery
+
 Scss
+
+webpack
 
 #### 使用说明
 
-常用几个git命令
+**第一次打开这个项目需要在控制台安装依赖**
+
+在控制台命令行输入： npm install
+
+如果没有报错就安装成功了
+
+**运行项目**
+
+控制台输入：npm run dev
+
+如果打开了浏览器，并在localhost:8080看到了页面，就说明项目运行成功
+
+# 常用几个git命令
+
 **下载一个项目和它的整个代码历史**
-$ git clone [url]
+git clone [url]
+
+
+
 **添加当前目录的所有文件到暂存区**
-$ git add .``
+git add .
+
+
+
 **提交暂存区到仓库区**
-$ git commit -m [message]
-**取回远程仓库的变化，并与本地分支合并**
-$ git pull [remote] [branch]
-**上传本地指定分支到远程仓库**
-$ git push [remote] [branch]
+git commit -m [message] ---message写你做的修改，写了什么代码
+
+
+
+**取回远程仓库的变化，并与本地合并**
+git pull
+
+
+
+**上传本地到远程仓库**
+git push
+
+#### 注意事项
+
+**很重要**：在每次从仓库(git pull)拉代码时，一定要先提交本地1.(git add .)2.(git commit -m [这里写修改内容]), 再git pull。**不然你自己写的代码就会被覆盖**
+
+**每个人到自己对应目录下去写代码（static/...）**

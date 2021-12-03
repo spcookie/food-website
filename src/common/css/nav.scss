@@ -1,0 +1,54 @@
+@import "common";
+
+
+#index {
+
+  .nav {
+
+    @include background();
+
+    > ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        padding: 0 3%;
+        height: 98px;
+        //width: calc(100% / 6);
+        color: white;
+        font-size: 20px;
+        line-height: 98px;
+        text-align: center;
+
+        &:not(#logo):hover {
+          border-bottom: white solid 4px;
+        }
+
+        img {
+          width: 98px;
+        }
+      }
+    }
+  }
+
+  .nav-click {
+    background-color: white;
+    color: $bg-color !important;
+  }
+
+  .rotation-chart {
+    display: flex;
+    height: 652px;
+    overflow-y: hidden;
+
+    > div {
+      height: inherit;
+      width: 100%;
+
+      img {
+        height: inherit;
+      }
+    }
+  }
+}
