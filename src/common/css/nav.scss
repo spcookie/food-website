@@ -1,54 +1,63 @@
 @import "common";
 
-
 #index {
-
   .nav {
-
     @include background();
-
     > ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      li {
+      > li {
         padding: 0 3%;
         height: 98px;
         //width: calc(100% / 6);
         color: white;
         font-size: 20px;
-        line-height: 98px;
         text-align: center;
-
-        &:not(#logo):hover {
+        &:not(.not-underline):hover {
           border-bottom: white solid 4px;
         }
-
+        &:last-of-type {
+          position: relative;
+          ul {
+            display: none;
+            position: absolute;
+            top: 98px;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 2;
+            > li {
+              padding: 6px 0;
+              color: black;
+              &:hover {
+                color: white;
+                background-color: $bg-color;
+              }
+            }
+          }
+          &:hover ul {
+            display: block;
+          }
+        }
+        & > div {
+          margin: 27px 0;
+          height: 45%;
+          line-height: 40px;
+        }
         img {
           width: 98px;
         }
       }
     }
   }
-
   .nav-click {
     background-color: white;
     color: $bg-color !important;
   }
-
-  .rotation-chart {
-    display: flex;
-    height: 652px;
-    overflow-y: hidden;
-
-    > div {
-      height: inherit;
-      width: 100%;
-
-      img {
-        height: inherit;
-      }
-    }
+  .luminescence {
+    background-color: #b96f2a6e;
+    border-radius: 30%;
+    box-shadow: 0 0 23px 9px #b96f2aa1;
   }
 }

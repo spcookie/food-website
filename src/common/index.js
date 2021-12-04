@@ -10,4 +10,5 @@ import footer from './css/footer.scss'
  * 导入js
  */
 import('./js/nav')
+import('./js/rotationChart')
 

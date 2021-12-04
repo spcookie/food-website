@@ -1,30 +1,42 @@
 @import "common";
 
-.footer {
-  @include background();
-
-  > div {
-    display: flex;
-    justify-content: center;
-    height: 80px;
-
-    div {
-      width: calc(100% / 3);
-
-      &:nth-of-type(1) {
-
-        img {
-          padding: 12px 0;
-          width: 60px;
+#index {
+  .footer {
+    @include background();
+    > div {
+      display: flex;
+      justify-content: center;
+      height: 98px;
+      > div {
+        width: calc(100% / 3);
+        &:nth-of-type(1) img {
+          margin: 22px 0;
+          width: 80px;
         }
-      }
-
-      &:nth-of-type(2) {
-        padding: 10px 0;
-        text-align: center;
-
-        img {
-          width: 61px;
+        &:nth-of-type(2) {
+          text-align: center;
+          img {
+            margin: 9px;
+            width: 80px;
+          }
+        }
+        &:nth-of-type(3) {
+          img {
+            width: 24px;
+          }
+          > div {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin: 18px 0;
+            &:first-of-type {
+              margin-right: 150px;
+            }
+            p {
+              text-indent: 0.5em;
+              color: white;
+            }
+          }
         }
       }
     }
