@@ -38,13 +38,13 @@ BaseRouter.create([
     },
 ])
 
-import commom from '../common/index'
-import about from '../static/about/about'
-import cooperation from '../static/cooperation/cooperation'
-import home from '../static/home/home'
-import products from '../static/products/products'
-import service from '../static/service/service'
-import store from '../static/store/store'
+import('../common/index')
+import('../static/about/about')
+import('../static/cooperation/cooperation')
+import('../static/home/home')
+import('../static/products/products')
+import('../static/service/service')
+import('../static/store/store')
 
 export default {
     push: BaseRouter.push,
