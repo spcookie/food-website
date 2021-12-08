@@ -1,9 +1,12 @@
+let mode = 'development'
+// let mode = 'production'
+
 const {resolve} = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-    mode: 'development',
+    mode,
     entry: ['./src/index.js', './src/index.html'],
     output: {
         filename: '[name].js',
