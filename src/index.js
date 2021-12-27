@@ -1,11 +1,11 @@
 import $ from 'jquery'
-import R from './router/index.js'
+import Router from './router/index.js'
 
-R.push({
+Router.push({
     name: 'index'
 }).to($('#app'))
 
-R.push({
+Router.push({
     name: 'home'
 }).to($('#router-view'))
 

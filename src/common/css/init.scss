@@ -14,6 +14,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 .nav-center {
   width: $nav-with;
   margin: auto;
@@ -28,4 +34,9 @@ a {
   display: table;
   content: "";
   clear: both;
+}
+
+.fix::before {
+  display: table;
+  content: "";
 }

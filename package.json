@@ -1,7 +1,7 @@
 {
   "name": "web-final-assignment",
   "version": "1.0.0",
-  "description": "这是我们Web大作业的仓库，我们每个人都在这写打代码",
+  "description": "Web大作业",
   "main": "index.js",
   "scripts": {
     "build": "webpack",

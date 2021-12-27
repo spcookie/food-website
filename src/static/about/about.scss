@@ -1,4 +1,22 @@
 #about {
-  /*在这写css代码*/
+  header {
+    background: {
+      image: url("../../assets/img/home/shape7.png");
+      size: 100%;
+      repeat: no-repeat;
+      position-y: 50%;
+    };
+    text-align: center;
+    font-size: 1.5rem;
+    color: #65360a;
+  }
 
+  article {
+
+    p {
+      text-indent: 2em;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
 }

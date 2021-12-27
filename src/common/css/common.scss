@@ -7,7 +7,7 @@ $bg-color: #65360a;
 
 @mixin background() {
   background: {
-    image: url('../../assets/img/common/nav/decorativePattern.png');
+    //image: url('../../assets/img/common/nav/decorativePattern.png');
     size: cover;
     repeat: no-repeat;
   }

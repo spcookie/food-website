@@ -1,4 +1,130 @@
 #products {
-  /*在这写css代码*/
+  .head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 11px;
 
+    li {
+
+      &:first-of-type {
+        margin-right: 30px;
+      }
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .checked {
+      color: #0d90fe;
+    }
+  }
+
+  .small-triangle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(38px, 100%);
+    width: 18px;
+    height: 11px;
+    background: {
+      image: url("../../assets/img/products/polygon1.png");
+    };
+  }
+
+  .nav-list {
+    padding: 10px 16px;
+    border: 1px solid #0d90fe;
+    margin-bottom: 30px;
+
+    .check-list {
+      color: #ee7023;
+    }
+
+    li {
+      float: left;
+      padding-right: 30px;
+    }
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 6%;
+
+    > div {
+      position: relative;
+      margin-bottom: 5vh;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover > div {
+        display: block;
+      }
+
+      .img-detail {
+        display: none;
+        padding: 20px 32px;
+        width: 241%;
+        height: 100%;
+        background-color: #f4f4f4;
+        z-index: 99;
+
+
+        h4 {
+          margin-bottom: 10px;
+          text-align: center;
+          color: #ff8100;
+          font-size: larger;
+        }
+
+        p {
+          text-indent: 2em;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        @media screen and (max-width: 1600px) {
+          p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      .img-right {
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+
+      .img-center-bottom {
+        position: absolute;
+        bottom: -100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      .img-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+      }
+
+      .img-center-top {
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
 }

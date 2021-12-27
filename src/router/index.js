@@ -4,47 +4,67 @@ BaseRouter.create([
     {
         name: 'home',
         path: './home',
-        source: require('../static/home/home.html')
+        source: {
+            html: () => require('../static/home/home.html'),
+            css: () => import('../static/home/home.scss'),
+            js: () => import('../static/home/home.js')
+        }
     },
     {
         name: 'index',
         path: './index',
-        source: require('../common/index.html')
+        source: {
+            html: () => require('../common/index.html'),
+            css: () => import('../common/index.scss'),
+            js: () => import('../common/index.js')
+        }
     },
     {
         name: 'about',
         path: './about',
-        source: require('../static/about/about.html')
+        source: {
+            html: () => require('../static/about/about.html'),
+            css: () => import('../static/about/about.scss'),
+            js: () => import('../static/about/about.js')
+        }
     },
     {
         name: 'cooperation',
         path: './cooperation',
-        source: require('../static/cooperation/cooperation.html')
+        source: {
+            html: () => require('../static/cooperation/cooperation.html'),
+            css: () => import('../static/cooperation/cooperation.scss'),
+            js: () => import('../static/cooperation/cooperation.js')
+        }
     },
     {
         name: 'products',
         path: './products',
-        source: require('../static/products/products.html')
+        source: {
+            html: () => require('../static/products/products.html'),
+            css: () => import('../static/products/products.scss'),
+            js: () => import('../static/products/products.js')
+        }
     },
     {
         name: 'service',
         path: './service',
-        source: require('../static/service/service.html')
+        source: {
+            html: () => require('../static/service/service.html'),
+            css: () => import('../static/service/service.scss'),
+            js: () => import('../static/service/service.js')
+        }
     },
     {
         name: 'store',
         path: './store',
-        source: require('../static/store/store.html')
+        source: {
+            html: () => require('../static/store/store.html'),
+            css: () => import('../static/store/store.scss'),
+            js: () => import('../static/store/store.js')
+        }
     },
 ])
-
-import('../common/index')
-import('../static/about/about')
-import('../static/cooperation/cooperation')
-import('../static/home/home')
-import('../static/products/products')
-import('../static/service/service')
-import('../static/store/store')
 
 export default {
     push: BaseRouter.push,

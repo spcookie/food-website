@@ -1,6 +1,77 @@
-#home {
-  /*在这写css代码*/
+@import "../../common/css/common";
 
+#home {
+
+  header {
+    margin: 30px 0;
+    width: 100%;
+    text-align: center;
+    color: $bg-color;
+    font-size: 1.5rem;
+    //letter-spacing: .4em;
+    background: {
+      image: url("../../assets/img/home/shape7.png");
+      size: 100%;
+      position-y: 50%;
+      repeat: no-repeat;
+    };
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0 10%;
+
+    section {
+
+      img {
+        width: 100%;
+      }
+
+      h5 {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10px auto;
+        width: fit-content;
+        font-size: larger;
+        color: #ff8100;
+
+        &::before {
+          display: block;
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          width: 10px;
+          height: 6px;
+          transform: translate(-50%, 0);
+          background: {
+            color: white;
+            image: url("../../assets/img/home/ellipse4.png");
+            repeat: no-repeat;
+            position: 3px 1px;
+          };
+          content: "";
+        }
+
+        &::after {
+          display: block;
+          content: "";
+          border-bottom: 2px solid #ff8100;
+        }
+      }
+
+      p {
+        margin-bottom: 20px;
+        padding: 0 12px;
+        word-break: break-all;
+        font-size: medium;
+        text-indent: 2em;
+        line-height: 22px;
+      }
+    }
+  }
 }
 
 
